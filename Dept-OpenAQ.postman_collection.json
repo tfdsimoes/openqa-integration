@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "cf7f7205-939e-4d4b-a76e-8ea3e2f86ac5",
+		"name": "Dept-OpenAQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/air-quality/cities?country=ES",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"air-quality",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "ES"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/air-quality/countries",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"air-quality",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get parameters information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/air-quality/parameters",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"air-quality",
+						"parameters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get locations of a city",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/air-quality/cities/Barcelona/locations",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"air-quality",
+						"cities",
+						"Barcelona",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get air quality of location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/air-quality/locations/ES0694A/air-quality",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"air-quality",
+						"locations",
+						"ES0694A",
+						"air-quality"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
